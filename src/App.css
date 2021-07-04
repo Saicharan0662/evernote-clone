@@ -4,6 +4,13 @@ body {
 
 .brand-logo{
   margin-left: 10px;
+  text-decoration: none;
+}
+
+.brand-logo:hover{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 form{
@@ -23,7 +30,6 @@ form{
 
 .right-aling{
   display: flex;
-  /* align-items: flex-end; */
   justify-content: flex-end;
 }
 
@@ -31,30 +37,21 @@ form{
   text-align: center;
 }
 
-@media screen and (max-width:617px) {
-  .row{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 415px) {
+  .row .col.s5 {
+    width: 86%;
   }
   .row .col.s7 {
-    margin-left: 0;
+    width: 90%;
   }
-  .row .col.s5{
-    margin-left: 0;
+  form{
+    margin: 10px 0px 0px;
   }
-}
-
-@media screen and (max-width: 376px){
-  .section{
-    width: 149%;
-  }
-  .white{
-    margin-left: -70px;
-  }
-  .notelist{
-    width: 179%;
-    padding: 0px;
+  .center-aling {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
